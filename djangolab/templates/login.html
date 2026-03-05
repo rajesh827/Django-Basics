@@ -5,10 +5,8 @@
   </head>
   <body>
     <h2>Login</h2>
-    <!-- The form sends a POST request to the view -->
     <form method="POST">
       {% csrf_token %}
-      <!-- Required in Django for security -->
       <label>Username:</label>
       <input type="text" name="username" required /><br /><br />
 

@@ -21,12 +21,8 @@
   <body>
     <h2>TU Project Submission</h2>
 
-    <!-- enctype is REQUIRED for file uploads -->
     <form method="POST" enctype="multipart/form-data" novalidate>
-      {% csrf_token %}
-
-      <!-- Render the form fields and error messages -->
-      {{ form.as_p }}
+      {% csrf_token %} {{ form.as_p }}
 
       <button type="submit">Submit Project</button>
     </form>
