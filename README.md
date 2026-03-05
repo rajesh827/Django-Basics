@@ -108,33 +108,6 @@ This helps understand the **Django request–response lifecycle**.
 
 ---
 
-## Project Structure
-`
-Django-Basics/
-│
-├── djangobasics/
-│ ├── settings.py
-│ ├── urls.py
-│
-├── djangolab/
-│ ├── models.py
-│ ├── views.py
-│ ├── forms.py
-│ ├── middleware.py
-│
-├── templates/
-│ ├── login.html
-│ ├── patient_form.html
-│ ├── project_form.html
-│ ├── registration_form.html
-│ ├── upload_form.html
-│
-└── manage.py
-`
----
-
----
-
 ## Conclusion
 
 This lab helped in understanding how Django manages web applications using the **MVT architecture**. \
