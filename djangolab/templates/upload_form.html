@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Upload Image</title>
+    <style>
+      .errorlist {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Upload a Profile Picture</h2>
+
+    <!-- enctype="multipart/form-data" is REQUIRED for file uploads -->
+    <form method="POST" enctype="multipart/form-data" novalidate>
+      {% csrf_token %} {{ form.as_p }}
+
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>

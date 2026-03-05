@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>User Registration</title>
+    <style>
+      .errorlist {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Sign Up</h2>
+
+    <!-- novalidate ensures our server-side script catches the errors -->
+    <form method="POST" novalidate>
+      {% csrf_token %}
+
+      <!-- Renders the form inputs and any error messages -->
+      {{ form.as_p }}
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>

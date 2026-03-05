@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Add Patient</title>
+  </head>
+  <body>
+    <h2>Register New Patient</h2>
+
+    <!-- novalidate prevents HTML5 default validation so we can see our Django server-side validation work -->
+    <form method="POST" novalidate>
+      {% csrf_token %}
+
+      <!-- Render the form as paragraphs -->
+      {{ form.as_p }}
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
